@@ -1,0 +1,246 @@
+<!-- https://youtu.be/_xkSvufmjEs?si=mh-MXT2ZdUasYAYn&t=3416 -->
+<!-- adobe.ly/2GAgF93 -->
+<!-- https://scrimba.com/build-and-deploy-your-portfolio-c012 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="../img/face.jpg">
+
+    <!-- Help auto scale for desktop & mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seongryul..park Portfolio Website</title>
+
+    <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="external/normalize.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- https://fonts.google.com/selection/embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"> <a href="#home" class="nav__link">Home</a> </li>
+                <li class="nav__item"> <a href="#skills" class="nav__link">Experiences</a> </li>
+                <li class="nav__item"> <a href="#about" class="nav__link">About Me</a> </li>
+                <li class="nav__item"> <a href="#projects" class="nav__link">Projects</a> </li>
+                <li class="nav__item"> <a href="#resume" class="nav__link">Resume</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+
+    <section class="intro" id="#home">
+        <!-- TODO put in a mouse based interactive shader visualization page-->
+        <!-- <div class="intro-bg">
+            <iframe src="webgl/for_fun.html"></iframe>
+        </div> -->
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Seongryul Park</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Game Programmer/Designer/Developer/Graphics/Seongryul.Park </p>
+        <img src="img/face.jpg" alt="picture" class="intro__img" />
+    </section>
+
+    <!-- My Services -->
+    <section class="my-services" id="skills">
+        <h2 class="section__title section__title--services">SKILLS</h2>
+        <div class="services">
+            <div class="service">
+                <h3>C++ Programmer</h3>
+                <p> C++ is the powerful language I am most proficient in. 
+                    It has allowed me to gain extensive experience, from low-level rendering programming to exploring modern C++ features. 
+                    My work has involed deep understanding of memory management, performance optimization, and low-level system programming. 
+                    Through using C++, I've built custom game engines and worked on performance-oriented graphics projects, 
+                    where I continuously leverage its power to create efficient, high-performance systems.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Graphics Development</h3>
+                <p> I have gained experience with OpenGL and Vulkan, focusing on low-level graphics programming and real-time rendering techniques. 
+                    While developing custom game engines, I’ve worked on optimizing shaders and exploring various rendering methods. 
+                    I am currently studying Vulkan and PBR, and am working to deepen my understanding of advanced graphics techniques like PBR and deferred shading. 
+                    I am also expanding my knowledge of shader programming, including vertex, tessellation, geometry, and fragment shaders, 
+                    while experimenting with compute shaders for parallel computing.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Full-Stack Developer</h3>
+                <p> I have experience working at a startup, 
+                    where I developed cross-platform mobile applications useing React Native. 
+                    This allowed me to efficiently build application for both iOS and Android, focusing on a consistent user experience regardless platforms. 
+                    Additionally, I've worked with Django to create prototype servers handling backend logic, API, and database manageing for mobile applications.
+                </p>
+            </div>
+        </div>
+
+        <a href="#projects" class="btn">Projects</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">
+            Seongryul Park - Graphics Programmer
+        </p>
+
+        <div class="about-me__body">
+            <p>
+                I am an enthusiastic graphics programmer with a passion for low-level graphics programming and real-time rendering.
+                With a solid foundation in C++, OpenGL, and Vulkan, I focus on exploring advanced topics for parallel computing and graphics pipelines.
+                I am currently studying and developing my own Vulkan-based game engine and working on optimizing graphics performance for various simulations.
+            </p>
+            <p>
+                In addition to graphics, I have experience in full-stack development, having worked with React Native and Django to create cross-platform applications. 
+                I am also deeply passionate about startups, having co-founded a company where I applied my technical knowledge to develop innovative products. From creating a data collection system for analyzing user running pace to implementing backend systems, 
+                I thrive in the fast-paced and problem-solving environment that startups offer. The challenge of developing products from the ground up excites me, and I am always eager to contribute to new ventures with my technical skills and creativity.
+            </p>
+        </div>
+        <img src="img/face.jpg" alt="a picture" class="about-me__img" />
+    </section>
+
+    <!-- My Portfolio -->
+    <section class="my-projects" id="projects">
+        <h2 class="section__title section__title--projects">My Projects</h2>
+        <p class="section__subtitle section__subtitle--projects">
+            A selection of my range of projects
+        </p>
+        <div class="portfolio">
+            <a href="portfolio/01_hello.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/01_hello.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/02_meshes.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/02_meshes.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/03_fog.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/03_fog.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/04_toon.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/04_toon.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/05_shadow.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/05_shadow.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/06_value.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/06_value.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/07_gradient.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/07_gradient.jpg" alt="" class="portfolio__img" />
+            </a>
+
+        </div>
+    </section>
+    <!-- Resume Section -->
+    <section class="my-resume" id="resume">
+        <h2 class="section__title section__title--resume">Resume</h2>
+        <a target="_blank" href="docs/Resume - Seongryul.park.pdf"><i class="far fa-file-pdf"></i> PDF</a>
+
+        <div class="resume-section">
+            <h3>Experience</h3>
+            <div class="resume-item">
+            <p>
+                <b>Pace Maker | Tech Lead, Co-founder</b></br>
+                Jan. 2025 - Present</br>
+                <em>Daegu, Republic of Korea</em></br>
+                Leading the development of a data collection system for analyzing user’s running pace and providing personalized recommendations for optimal running pace. 
+                Implemented a React Native application to collect users' running data, including pace and GPS information, using a custom XML format post-workout. 
+                Developed a data preprocessing system using Python’s Pandas library to collect and organize user data for analysis and machine learning applications.
+            </p>
+        </div>
+        
+    <h3>Projects</h3>
+        <div class="resume-item">
+            <p>
+                <b>Emu War | Producer</b></br>
+                Jan. 2025 - Present</br>
+                <em>Redmond, WA</em></br>
+                Developing a 3D FPS, roguelike game using Unreal Engine 5 and Blender. 
+                Implemented procedural map generation to provide users with endless maps to explore. 
+                Optimized performance by utilizing raycasting for efficient object interactions.
+            </p>
+        </div>
+        <div class="resume-item">
+            <p>
+                <b>Lost Light | Tech Lead, Producer</b></br>
+                Sep. 2023 - Jun. 2024</br>
+                <em>Daegu, Republic of Korea</em></br>
+                Developed a 2D platformer game with a player-designed level system, allowing users to create and share their own levels. 
+                Implemented a graphic engine with OpenGL and batch rendering techniques to achieve emission light effects efficiently. 
+                Developed a custom map editor utilizing a chunk system to automatically and efficiently load and unload blocks, decorations, lights, and enemies.
+                Implemented collision detection using a broad phase algorithm for improved performance.
+            </p>
+        </div>
+        <div class="resume-item">
+            <p>
+                <b>Stinky Framework | Producer</b></br>
+                Jul. 2023 - Aug. 2023</br>
+                <em>Daegu, Republic of Korea</em></br>
+                Developed the “Stinky Framework,” a custom 2D graphics framework designed for programmers unfamiliar with computer graphics concepts. 
+                Utilized modeling instancing techniques for efficient rendering and simplified graphic implementations, like the DrawRect function for easy graphic creation with minimal code.
+            </p>
+        </div>
+        <div class="resume-item">
+            <p>
+                <b>Coffee Load | Tech Lead, Producer</b></br>
+                Mar. 2022 - Jun. 2022</br>
+                <em>Daegu, Republic of Korea</em></br>
+                Developed a cafe management simulation game where players brew coffee and make beverages to satisfy customers. 
+                Added complexity elements to beverage creation, encouraging multiple playthroughs by offering higher rewards for more complex drinks. 
+                Implemented multiple endings based on revenue and customer satisfaction, enhancing replay value.
+            </p>
+        </div>
+        <div class="resume-item">
+            <p>
+                <b>Sweet Dream | Tech Lead</b></br>
+                Sep. 2021 - Dec. 2021</br>
+                <em>Daegu, Republic of Korea</em></br>
+                Developed a horror-themed 2D roguelike game with 3D-like visuals. 
+                Overcame the limitations of the professor’s custom 2D framework by implementing raycasting techniques and applying 3D perspective to create immersive visuals.
+            </p>
+        </div>
+        </div>
+    </section>
+<!-- /Resume Section -->
+
+    <!-- /Resume Section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:seongryul.park@digipen.edu" class="footer__link">my.email@digipen.edu</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/seongryul">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/seongryul-park">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <!-- Want to list more? search : https://fontawesome.com/v5/search?ic=brands -->
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
