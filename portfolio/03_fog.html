@@ -64,22 +64,49 @@
             Project <strong>Fog</strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">3D Graphics</p>
-        <img src="../img/portfolio_thumbnails/03_fog.jpg" alt="a picture of this portfolio item" class="intro__img">
+        <img src="../img/portfolio_thumbnails/03_fog.png" alt="a picture of this portfolio item" class="intro__img">
     </section>
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
-
-        <h2>Tasks Completed</h2>
+        <hr>
+        <p>Implemented various types of fog effects</p>
         <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
+            <li>Linear Fog</li>
+            <li>Exponential Fog</li>
+            <li>FragCoord.z Fog</li>
         </ul>
-
+        
+        <h2>Tasks Completed</h2>
+        <hr>
+        <p>Implemented Linear Fog</p>
+        <ul>
+            <li>Vertex Shader : Passed model-to-view coordinates for distance calculation</li>
+            <li>Fragment Shader : Applied linear fog effect based on distance using <code>smoothstep</code></li>
+        </ul>
+        <p>Implemented Exponential Fog</p>
+        <ul>
+            <li>Vertex Shader : Passed model-to-view coordinates for distance calculation</li>
+            <li>Fragment Shader : Applied exponential fog effect using <code>exp2</code></li>
+        </ul>
+        <p>Implemented FragCoord.z Fog</p>
+        <ul>
+            <li>Fragment shader : Applied linear fog effect based on distance using <code>FragCoord.z</code> value and <code>smoothstep</code></li>
+        </ul>
+        
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+        <hr>
+        <p>Reflect on the project</p>
+        <ul>
+            <li>Learned how to implement various types of fog effects using shaders</li>
+            <li>Applied different fog effects such as, linear, exponential, and FragCoord.z</li>
+        </ul>
+        <p>What I learned from the experience</p>
+        <ul>
+            <li>Gained a deeper understanding of shader programming</li>
+            <li>Realized that effective visual effects can be achieved with relatively simple shader code</li>
+        </ul>
+        
     </div>
 
     <div class="portfolio-item-individual">
@@ -89,15 +116,15 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:my.email@digipen.edu" class="footer__link">my.email@digipen.edu</a>
+        <a href="mailto:my.email@digipen.edu" class="footer__link">seongryul.park@digipen.edu</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/mylinkedinid">
+                <a class="social-list__link" href="https://linkedin.com/in/seongryul">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/mygithubid">
+                <a class="social-list__link" href="https://github.com/seongryul-park">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
