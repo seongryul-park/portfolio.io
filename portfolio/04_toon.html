@@ -10,7 +10,7 @@
 
     <!-- Help auto scale for desktop & mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDENT TODO Website</title>
+    <title>Seongryul Park Graphics Website</title>
 
     <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="../external/normalize.css">
@@ -64,24 +64,66 @@
             Project <strong>Toon Shading</strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">3D Graphics</p>
-        <img src="../img/portfolio_thumbnails/04_toon.jpg" alt="a picture of this portfolio item" class="intro__img">
+        <img src="../img/portfolio_thumbnails/04_toon.png" alt="a picture of this portfolio item" class="intro__img">
     </section>
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
-
-        <h2>Tasks Completed</h2>
+        <hr>
+        <p>Implemented various styles of Toon Shading based on Cel Shading</p>
         <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
+            <li>Custom Ranges Toon Shading</li>
+            <li>Uniform Ranges Toon Shading</li>
+            <li>Gradient Texture Toon Shading</li>
+            <li>Applied Anti-Aliasing in all three shading styles</li>
         </ul>
-
+        
+        <h2>Tasks Completed</h2>
+        <hr>
+        <p>Implemented Cel Shading for all toon shading styles</p>
+        <ul>
+            <li>Sent the normal matrix as a uniform, calculated from the model and view matrices</li>
+            <li>Vertex Shader: Passed normal vector for diffuse and specular calculations</li>
+            <li>Fragment Shader: Calculated diffuse and specular shading using equations</li>
+        </ul>
+        <p>Implemented Custom Ranges Toon Shading</p>
+        <ul>
+            <li>Devided colors using conditional logics</li>
+            <li>Applied Anti-Aliasing for Custom Ranges Toon Shading</li>
+        </ul>
+        <p>Implemented Uniform Ranges Toon Shading</p>
+        <ul>
+            <li>Devided colors into uniform chunks using chunkNumber</li>
+            <li>Applied Anti-Aliasing for Uniform Ranges Toon Shading</li>
+        </ul>
+        <p>Implemented Gradient Texture Toon Shading</p>
+        <ul>
+            <li>Devided colors using a gradient texture</li>
+            <li>Applied Anti-Aliasing for Gradient Texture Toon Shading</li>
+        </ul>
+        <p>Applied Linear Fog and mixed the calculated Toon Shading Color</p>
+        <ul>
+            <li>Vertex Shader : Passed model-to-view coordinates for distance calculation</li>
+            <li>Fragment Shader : Applied linear fog effect based on distance using <code>smoothstep</code> and mixed the calculated color</li>
+        </ul>
+        
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
-    </div>
-
+        <hr>
+        <p>discussing any challenges faced and solution</p>
+        <ul>
+            <li>Find the error in WebGL that did not occur in Windows environment</li>
+            <li>Used local server to debug the error in a WebGL</li>
+            <li>Identified the cause: In WebGL, <code>int / float</code> is not allowed.</li>
+            <li>WebGL requires explicit type casting</li>
+        </ul>
+        <p>What I learned from the experience</p>
+        <ul>
+            <li>Gained experience debugging in a WebGL environment</li>
+            <li>Struggled with understanding anti-aliasing for gradient texture toon shading, but eventually understand 
+            <li>Gained experience debugging in a WebGL environment</li>
+            <li>Struggled with understanding anti-aliasing for gradient texture toon shading, but eventually understood the logic</li>
+        </ul>
+        
     <div class="portfolio-item-individual">
         <h2>Demo</h2>
         <iframe id="demo" src="../webgl/D04ToonShading/graphics_fun.html?start=toon" tabindex="-1"></iframe>
@@ -89,15 +131,15 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:my.email@digipen.edu" class="footer__link">my.email@digipen.edu</a>
+        <a href="mailto:my.email@digipen.edu" class="footer__link">seongryul.park@digipen.edu</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/mylinkedinid">
+                <a class="social-list__link" href="https://linkedin.com/in/seongryul">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/mygithubid">
+                <a class="social-list__link" href="https://github.com/seongryul-park">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
