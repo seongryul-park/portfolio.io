@@ -10,7 +10,7 @@
 
     <!-- Help auto scale for desktop & mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDENT TODO Website</title>
+    <title>Seongryul Park Graphics Website</title>
 
     <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="../external/normalize.css">
@@ -64,22 +64,36 @@
             Project <strong>Shadow Mapping</strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">3D Graphics</p>
-        <img src="../img/portfolio_thumbnails/05_shadow.jpg" alt="a picture of this portfolio item" class="intro__img">
+        <img src="../img/portfolio_thumbnails/05_shadow.png" alt="a picture of this portfolio item" class="intro__img">
     </section>
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
+        <hr>
+        <p>Implement shadow mapping using a shadow map</p>
 
         <h2>Tasks Completed</h2>
-        <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
-        </ul>
+        <hr>
+        <p>Implemented depth texture creation for shadow mapping</p>
+        <p>Implemented camera view matrix and world transformation based on camea parameters</p>
+        <p>Implemented a framebuffer class to create shadow map</p>
+        <p>Implemented <code>renderToDepthBuffer</code> to make ashadow map and <code>renderToScreen</code> to apply shadow mapping during main rendering</p>
+        <p>Fragment Shader: Used <code>textureProj</code> for depth comparison and applied shadow into rendering</p>
 
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+        <hr>
+        <p>discussing any challenges faced and solution</p>
+        <ul>
+            <li>Nothing showed up on the screen, although everything appeared correctly in Rendordoc's</li>
+            <li>The issue was due to fogetting to unbind the framebuffer</li>
+            <li>This experience realized the importance of unbinding the frambuffer</li>
+        </ul>
+        <p>What I learned from the experience</p>
+        <ul>
+            <li>Gained experience implementing shadow mapping using a shadow map</li>    
+            <li>Gained experience implementing framebuffers in OpenGL</li>
+            <li>Deepened understanding of how shadow mapping works and how to implement it</li>
+        </ul>
     </div>
 
     <div class="portfolio-item-individual">
@@ -87,23 +101,23 @@
         <iframe id="demo" src="../webgl/D05ShadowMapping/graphics_fun.html?start=shadow" tabindex="-1"></iframe>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:my.email@digipen.edu" class="footer__link">my.email@digipen.edu</a>
+        <a href="mailto:my.email@digipen.edu" class="footer__link">seongryul.park@digipen.edu</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/mylinkedinid">
+                <a class="social-list__link" href="https://linkedin.com/in/seongryul">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/mygithubid">
+                <a class="social-list__link" href="https://github.com/seongryul-park">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
             <!-- Want to list more? search : https://fontawesome.com/v5/search?ic=brands -->
         </ul>
     </footer>
+
 
     <script src="../js/index.js"></script>
 
