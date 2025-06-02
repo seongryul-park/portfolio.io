@@ -73,14 +73,37 @@
         <p>Implemented value noise using permutation hashing</p>
 
         <h2>Tasks Completed</h2>
+        <hr>
         <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
+            <li>Implemented 1D, 2D, and 3D value noise evaluation using linear, bilinear, and trilinear interpolation</li>
+            <li>Implemented permutation hashing for noise computation</li>
+            <li>Implemented smoothing methods : Linear, Cosine, SmoothStep, and Quintic</li>
         </ul>
 
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+        <hr>
+        <p>Reflect on the project<p>
+            <ul>
+                <li>Realized permutation hasing using bitwise operation(&) is more efficient than modulo calculation</li>
+                <li>Realized value noise has a potential to generate unique textures without using image textures</li>
+            </ul>
+        <hr>
+        <p>discussing challenges faced</p>
+            <ul>
+                <li>Implemented value noise and shaders, but it didn't draw the noise texture.</li>
+                <li>When rendering value noise in web-release, the splash screen and the value noise texture are blended unintentionally.</li>
+            </ul>
+        <hr>
+        <p>solutions implemented</p>
+            <ul>
+                <li>Using RendorDoc, I found that the texture coordinates are connected to the wrong layout.</li>
+                <li>Explicitly set the alpha value of the fragment shader’s <code>texture</code> function output to 1.</li>
+            </ul>
+        <hr>
+        <p>what you learned from the experience.</p>
+            <ul>
+                <li>I realized that RenderDoc makes graphics debugging much easier.</li>
+            </ul>
     </div>
 
     <div class="portfolio-item-individual">
@@ -90,15 +113,15 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:my.email@digipen.edu" class="footer__link">my.email@digipen.edu</a>
+        <a href="mailto:my.email@digipen.edu" class="footer__link">seongryul.park@digipen.edu</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/mylinkedinid">
+                <a class="social-list__link" href="https://linkedin.com/in/seongryul">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/mygithubid">
+                <a class="social-list__link" href="https://github.com/seongryul-park">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
